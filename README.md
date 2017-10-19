@@ -1,4 +1,4 @@
-Simple questions and exercices to learn about Docker!! ;)
+# Simple questions and exercices to learn about Docker!! ;)
 
 ### Questions
 
@@ -94,7 +94,7 @@ docker images | grep "pattern" | awk '{print $1}' | xargs docker rm
 ```
 
 
-##Next Chapter ;)
+## Next Chapter ;)
 
 ```
 git clone https://github.com/docker/example-voting-app.git
