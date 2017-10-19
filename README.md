@@ -1,6 +1,6 @@
 Simple questions and exercices to learn about Docker!! ;)
 
-###Questions
+### Questions
 
 ```
 1- docker info  
@@ -15,26 +15,26 @@ Simple questions and exercices to learn about Docker!! ;)
 10- docker run --name static-site -e AUTHOR="Icaro Bichir" -d -p 8888:80 dockersamples/static-site  
 ```
 
-###Concept
+### Concept
 	Images:
 	- Base images 	
 	- Child images 
 	- Official images
 	- User images
 
-###Analysing Logs
+### Analysing Logs
 ```
 docker run -d alpine sh -c 'while true; do date; sleep 1; done'
 ```
 
-###Love cats?
+### Love cats?
 ```
 cd flask-app/
 docker build -t local/flask-app .
 docker run -d --name flask -p 8080:5000 local/flask-app
 ```
 
-###Docker image with Jenkins 2.3, with docker inside.
+### Docker image with Jenkins 2.3, with docker inside.
 ```
 git clone git@github.com:IcaroBichir/dind-plus-jenkins.git
 
@@ -43,7 +43,7 @@ docker-compose up --build
 docker exec jenkins2.3 cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 
-###A visualizer for Docker Swarm Mode using the Docker Remote API, Node.JS, and D3
+### A visualizer for Docker Swarm Mode using the Docker Remote API, Node.JS, and D3
 ```
 docker run -it -d -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock dockersamples/visualizer
 
@@ -79,7 +79,7 @@ docker service scale
 docker service logs
 ```
 
-###Kill and remove images
+### Kill and remove images
 ```
 docker ps
 docker kill DOCKER_ID
